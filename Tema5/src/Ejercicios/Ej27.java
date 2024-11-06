@@ -6,7 +6,7 @@ public class Ej27 {
 
 	public static void main(String[] args) {
 		LocalDate ld=LocalDate.now();
-		System.out.println("Prueba");
+		
 
 	}
 
