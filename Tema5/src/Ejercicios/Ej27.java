@@ -2,6 +2,7 @@ package Ejercicios;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class Ej27 {
@@ -22,7 +23,8 @@ public class Ej27 {
 			n=Funciones26.dimeEntero("Elije una opcion", sc);
 			switch (n) {
 			case 1:
-				
+				int Menu1=EdadDias(ld,sc);
+				System.out.println(Menu1+" dias para tu cumpleaños");
 				break;
 			case 2:
 				
@@ -36,7 +38,13 @@ public class Ej27 {
 			case 0:
 				break;
 			}
-		} while (true);
+			break;
+		} while (n==0);
+	}
+	static public int EdadDias(LocalDate ld,Scanner sc) {
+		LocalDate hoy=LocalDate.now();
+		int dias = (int) ChronoUnit.DAYS.between(hoy,ld);
+		return dias;
 	}
 
 }
