@@ -27,7 +27,8 @@ public class Ej27 {
 				System.out.println(Menu1+" dias para tu cumpleaños");
 				break;
 			case 2:
-				
+				int Menu2=EdadMes(ld,sc);
+				System.out.println(Menu2+" meses para tu cumpleaños");
 				break;
 			case 3:
 				
@@ -45,6 +46,11 @@ public class Ej27 {
 		LocalDate hoy=LocalDate.now();
 		int dias = (int) ChronoUnit.DAYS.between(hoy,ld);
 		return dias;
+	}
+	static public int EdadMes(LocalDate ld,Scanner sc) {
+		LocalDate hoy=LocalDate.now();
+		int mes = (int) ChronoUnit.MONTHS.between(hoy,ld);
+		return mes;
 	}
 
 }
