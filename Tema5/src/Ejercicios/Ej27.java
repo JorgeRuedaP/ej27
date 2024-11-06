@@ -36,7 +36,6 @@ public class Ej27 {
 			case 0:
 				break;
 			}
-			break;
 		} while (true);
 	}
 
