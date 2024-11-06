@@ -1,9 +1,11 @@
 package Ejercicios;
 
+import java.time.LocalDate;
+
 public class Ej27 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		LocalDate ld=LocalDate.now();
 
 	}
 
